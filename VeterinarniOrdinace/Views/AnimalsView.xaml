@@ -9,12 +9,11 @@
 
         <!-- Toolbar -->
         <StackPanel Orientation="Horizontal">
-            <Button Content="+ Přidat" Command="{Binding AddAnimalCommand}" Style="{StaticResource PrimaryButton}"/>
-            <Button Content="✎ Upravit" Command="{Binding EditAnimalCommand}"/>
-            <Button Content="🗑 Smazat" Command="{Binding DeleteAnimalCommand}"/>
-            <Button Content="⭳ Uložit" Command="{Binding SaveAllCommand}"/>
+            <Button Content=" + Přidat  " Command="{Binding AddAnimalCommand}" Style="{StaticResource PrimaryButton}"/>
+            <Button Content="✎ Upravit" Command="{Binding EditAnimalCommand}" Style="{StaticResource SecondaryButton}"/>
+            <Button Content="🗑 Smazat" Command="{Binding DeleteAnimalCommand}" Style="{StaticResource SecondaryButton}"/>
+            <Button Content="⭳ Uložit" Command="{Binding SaveAllCommand}" Style="{StaticResource SecondaryButton}"/>
             <TextBox Width="220" Margin="16,0,0,0" Text="{Binding AnimalSearchText, UpdateSourceTrigger=PropertyChanged}"/>
-            <ComboBox Width="160" Margin="8,0,0,0" ItemsSource="{Binding SpeciesFilterItems}" SelectedItem="{Binding SelectedSpeciesFilter}" />
         </StackPanel>
 
         <!-- Obsah -->
@@ -31,7 +30,7 @@
                     <DataGridTextColumn Header="Jméno" Binding="{Binding Name}" Width="2*"/>
                     <DataGridTextColumn Header="Druh" Binding="{Binding Species}" Width="*"/>
                     <DataGridTextColumn Header="Plemeno" Binding="{Binding Breed}" Width="*"/>
-                    <DataGridTextColumn Header="Majitel" Binding="{Binding OwnerId}" Width="2"/>
+                    <DataGridTextColumn Header="Majitel" Binding="{Binding OwnerId}" Width="2*"/>
                 </DataGrid.Columns>
             </DataGrid>
 
@@ -44,26 +43,33 @@
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
                         <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="160"/>
+                        <ColumnDefinition Width="140"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
 
                     <TextBlock Grid.Row="0" Grid.ColumnSpan="2" Text="Detail zvířete" FontWeight="SemiBold" Margin="0,0,0,8"/>
 
-                    <TextBlock Grid.Row="1" Text="Jméno" VerticalAlignment="Center"/>
+                    <TextBlock Grid.Row="1" Text="Jméno" VerticalAlignment="Center" />
                     <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding SelectedAnimal.Name, UpdateSourceTrigger=PropertyChanged}"/>
 
-                    <TextBlock Grid.Row="2" Text="Druh" VerticalAlignment="Center" Margin="0,8,0,0"/>
+                    <TextBlock Grid.Row="2" Text="Druh" VerticalAlignment="Center" Margin="0,8,0,0" />
                     <TextBox Grid.Row="2" Grid.Column="1" Margin="0,8,0,0" Text="{Binding SelectedAnimal.Species}"/>
 
-                    <TextBlock Grid.Row="3" Text="Plemeno" VerticalAlignment="Center" Margin="0,8,0,0"/>
+                    <TextBlock Grid.Row="3" Text="Plemeno" VerticalAlignment="Center" Margin="0,8,0,0" />
                     <TextBox Grid.Row="3" Grid.Column="1" Margin="0,8,0,0" Text="{Binding SelectedAnimal.Breed}"/>
 
-                    <TextBlock Grid.Row="4" Text="Majitel (OwnerId)" VerticalAlignment="Center" Margin="0,8,0,0"/>
+                    <TextBlock Grid.Row="4" Text="Majitel (OwnerId)" VerticalAlignment="Top" Margin="0,8,0,0" />
                     <TextBox Grid.Row="4" Grid.Column="1" Margin="0,8,0,0" Text="{Binding SelectedAnimal.OwnerId}"/>
+                    
+                    <StackPanel Grid.Row="6" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,12,0,0">
+                        <Button Content="Zrušit" Command="{Binding CancelOwnerEditCommand}" Margin="0,0,8,0" MinWidth="110" MinHeight="32" Style="{StaticResource SecondaryButton}"/>
+                        <Button Content="Uložit" Command="{Binding SaveAllCommand}" MinWidth="110" MinHeight="32" Style="{StaticResource PrimaryButton}"/>
+                    </StackPanel>
                 </Grid>
             </Border>
         </Grid>

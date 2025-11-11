@@ -10,10 +10,10 @@
         <!-- Toolbar -->
         <StackPanel Orientation="Horizontal">
             <Button Content="+ Přidat" Command="{Binding AddVisitCommand}" Style="{StaticResource PrimaryButton}"/>
-            <Button Content="✎ Upravit" Command="{Binding EditVisitCommand}"/>
-            <Button Content="🗑 Smazat" Command="{Binding DeleteVisitCommand}"/>
-            <Button Content="⭳ Uložit" Command="{Binding SaveAllCommand}"/>
-            <ComboBox Width="160" Margin="16,0,0,0" ItemsSource="{Binding VisitStatusItems}" SelectedItem="{Binding SelectedVisitStatusFilter}"/>
+            <Button Content="✎ Upravit" Command="{Binding EditVisitCommand}" Style="{StaticResource SecondaryButton}" />
+            <Button Content="🗑 Smazat" Command="{Binding DeleteVisitCommand}" Style="{StaticResource SecondaryButton}"/>
+            <Button Content="⭳ Uložit" Command="{Binding SaveAllCommand}" Style="{StaticResource SecondaryButton}"/>
+            <ComboBox Width="220" Margin="16,0,0,0" ItemsSource="{Binding VisitStatusItems}" SelectedItem="{Binding SelectedVisitStatusFilter}"/>
         </StackPanel>
 
         <!-- Obsah -->
@@ -28,7 +28,7 @@
                       SelectedItem="{Binding SelectedVisit}">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Datum" Binding="{Binding Date, StringFormat=\{0:G\}}" Width="*"/>
-                    <DataGridTextColumn Header="ZvířeId" Binding="{Binding AnimalId}" Width="Auto"/>
+                    <DataGridTextColumn Header="Zvíře" Binding="{Binding AnimalId}" Width="Auto"/>
                     <DataGridTextColumn Header="Důvod" Binding="{Binding Reason}" Width="2*"/>
                     <DataGridTextColumn Header="Diagnóza" Binding="{Binding Diagnosis}" Width="*"/>
                     <DataGridTextColumn Header="Cena" Binding="{Binding Price}" Width="Auto"/>
@@ -46,19 +46,21 @@
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
                         <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="160"/>
+                        <ColumnDefinition Width="140"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
 
                     <TextBlock Grid.Row="0" Grid.ColumnSpan="2" Text="Detail návštěvy" FontWeight="SemiBold" Margin="0,0,0,8"/>
 
                     <TextBlock Grid.Row="1" Text="Datum a čas" VerticalAlignment="Center"/>
-                    <DatePicker Grid.Row="1" Grid.Column="1" SelectedDate="{Binding SelectedVisit.Date, Mode=TwoWay}"/>
+                    <DatePicker Grid.Row="1" Grid.Column="1" Margin="0,8,0,0" SelectedDate="{Binding SelectedVisit.Date}"/>
 
-                    <TextBlock Grid.Row="2" Text="Zvíře (AnimalId)" VerticalAlignment="Center" Margin="0,8,0,0"/>
+                    <TextBlock Grid.Row="2" Text="Zvíře" VerticalAlignment="Center" Margin="0,8,0,0"/>
                     <TextBox Grid.Row="2" Grid.Column="1" Margin="0,8,0,0" Text="{Binding SelectedVisit.AnimalId}"/>
 
                     <TextBlock Grid.Row="3" Text="Důvod" VerticalAlignment="Center" Margin="0,8,0,0"/>
@@ -69,6 +71,11 @@
 
                     <TextBlock Grid.Row="5" Text="Cena" VerticalAlignment="Center" Margin="0,8,0,0"/>
                     <TextBox Grid.Row="5" Grid.Column="1" Margin="0,8,0,0" Text="{Binding SelectedVisit.Price}"/>
+                    
+                    <StackPanel Grid.Row="7" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,12,0,0">
+                        <Button Content="Zrušit" Command="{Binding CancelOwnerEditCommand}" Margin="0,0,8,0" MinWidth="110" MinHeight="32" Style="{StaticResource SecondaryButton}"/>
+                        <Button Content="Uložit" Command="{Binding SaveAllCommand}" MinWidth="110" MinHeight="32" Style="{StaticResource PrimaryButton}"/>
+                    </StackPanel>
                 </Grid>
             </Border>
         </Grid>
