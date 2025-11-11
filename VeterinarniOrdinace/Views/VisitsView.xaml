@@ -1,0 +1,76 @@
+﻿<UserControl x:Class="VeterinarniOrdinace.Views.VisitsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid Margin="4">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Toolbar -->
+        <StackPanel Orientation="Horizontal">
+            <Button Content="+ Přidat" Command="{Binding AddVisitCommand}" Style="{StaticResource PrimaryButton}"/>
+            <Button Content="✎ Upravit" Command="{Binding EditVisitCommand}"/>
+            <Button Content="🗑 Smazat" Command="{Binding DeleteVisitCommand}"/>
+            <Button Content="⭳ Uložit" Command="{Binding SaveAllCommand}"/>
+            <ComboBox Width="160" Margin="16,0,0,0" ItemsSource="{Binding VisitStatusItems}" SelectedItem="{Binding SelectedVisitStatusFilter}"/>
+        </StackPanel>
+
+        <!-- Obsah -->
+        <Grid Grid.Row="1" Margin="0,8,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Seznam -->
+            <DataGrid ItemsSource="{Binding FilteredVisits}" 
+                      SelectedItem="{Binding SelectedVisit}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Datum" Binding="{Binding Date, StringFormat=\{0:G\}}" Width="*"/>
+                    <DataGridTextColumn Header="ZvířeId" Binding="{Binding AnimalId}" Width="Auto"/>
+                    <DataGridTextColumn Header="Důvod" Binding="{Binding Reason}" Width="2*"/>
+                    <DataGridTextColumn Header="Diagnóza" Binding="{Binding Diagnosis}" Width="*"/>
+                    <DataGridTextColumn Header="Cena" Binding="{Binding Price}" Width="Auto"/>
+                    <DataGridTextColumn Header="Stav" Binding="{Binding Status}" Width="Auto"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <!-- Detail -->
+            <Border Grid.Column="1" Margin="12,0,0,0" Padding="12"
+                    BorderBrush="{StaticResource Brush.Border}" BorderThickness="1" CornerRadius="6" Background="{StaticResource Brush.BgAlt}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="160"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Row="0" Grid.ColumnSpan="2" Text="Detail návštěvy" FontWeight="SemiBold" Margin="0,0,0,8"/>
+
+                    <TextBlock Grid.Row="1" Text="Datum a čas" VerticalAlignment="Center"/>
+                    <DatePicker Grid.Row="1" Grid.Column="1" SelectedDate="{Binding SelectedVisit.Date, Mode=TwoWay}"/>
+
+                    <TextBlock Grid.Row="2" Text="Zvíře (AnimalId)" VerticalAlignment="Center" Margin="0,8,0,0"/>
+                    <TextBox Grid.Row="2" Grid.Column="1" Margin="0,8,0,0" Text="{Binding SelectedVisit.AnimalId}"/>
+
+                    <TextBlock Grid.Row="3" Text="Důvod" VerticalAlignment="Center" Margin="0,8,0,0"/>
+                    <TextBox Grid.Row="3" Grid.Column="1" Margin="0,8,0,0" Text="{Binding SelectedVisit.Reason}"/>
+
+                    <TextBlock Grid.Row="4" Text="Diagnóza" VerticalAlignment="Center" Margin="0,8,0,0"/>
+                    <TextBox Grid.Row="4" Grid.Column="1" Margin="0,8,0,0" Text="{Binding SelectedVisit.Diagnosis}"/>
+
+                    <TextBlock Grid.Row="5" Text="Cena" VerticalAlignment="Center" Margin="0,8,0,0"/>
+                    <TextBox Grid.Row="5" Grid.Column="1" Margin="0,8,0,0" Text="{Binding SelectedVisit.Price}"/>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>

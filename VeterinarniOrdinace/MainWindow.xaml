@@ -1,0 +1,40 @@
+﻿<Window x:Class="VeterinarniOrdinace.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:v="clr-namespace:VeterinarniOrdinace.Views"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VeterinarniOrdinace"
+        mc:Ignorable="d"
+        Title="Veterinární ordinace" Height="450" Width="800">
+    <DockPanel>
+        <!-- Status bar -->
+        <StatusBar DockPanel.Dock="Bottom">
+            <StatusBarItem Content="{Binding StatusText}"/>
+            <Separator/>
+            <StatusBarItem Content="{Binding Owners.Count, StringFormat={}{0} majitelů}"/>
+            <Separator/>
+            <StatusBarItem Content="{Binding Animals.Count, StringFormat={}{0} zvířat}"/>
+            <Separator/>
+            <StatusBarItem Content="{Binding Visits.Count, StringFormat={}{0} návštěv}"/>
+        </StatusBar>
+
+        <!-- Hlavička -->
+        <Border DockPanel.Dock="Top" Padding="12" BorderBrush="{StaticResource Brush.Border}" BorderThickness="0,0,0,1">
+            <TextBlock Text="⚕ Veterinární ordinace" FontSize="18" FontWeight="SemiBold" Foreground="{StaticResource Brush.Primary}"/>
+        </Border>
+
+        <!-- Záložky -->
+        <TabControl Margin="12">
+            <TabItem Header="Majitelé">
+                <v:OwnersView/>
+            </TabItem>
+            <TabItem Header="Zvířata">
+                <v:AnimalsView/>
+            </TabItem>
+            <TabItem Header="Návštěvy">
+                <v:VisitsView/>
+            </TabItem>
+        </TabControl>
+    </DockPanel>
+</Window>

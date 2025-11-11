@@ -1,0 +1,71 @@
+﻿<UserControl x:Class="VeterinarniOrdinace.Views.AnimalsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid Margin="4">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Toolbar -->
+        <StackPanel Orientation="Horizontal">
+            <Button Content="+ Přidat" Command="{Binding AddAnimalCommand}" Style="{StaticResource PrimaryButton}"/>
+            <Button Content="✎ Upravit" Command="{Binding EditAnimalCommand}"/>
+            <Button Content="🗑 Smazat" Command="{Binding DeleteAnimalCommand}"/>
+            <Button Content="⭳ Uložit" Command="{Binding SaveAllCommand}"/>
+            <TextBox Width="220" Margin="16,0,0,0" Text="{Binding AnimalSearchText, UpdateSourceTrigger=PropertyChanged}"/>
+            <ComboBox Width="160" Margin="8,0,0,0" ItemsSource="{Binding SpeciesFilterItems}" SelectedItem="{Binding SelectedSpeciesFilter}" />
+        </StackPanel>
+
+        <!-- Obsah -->
+        <Grid Grid.Row="1" Margin="0,8,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Seznam -->
+            <DataGrid ItemsSource="{Binding FilteredAnimals}" 
+                      SelectedItem="{Binding SelectedAnimal}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Jméno" Binding="{Binding Name}" Width="2*"/>
+                    <DataGridTextColumn Header="Druh" Binding="{Binding Species}" Width="*"/>
+                    <DataGridTextColumn Header="Plemeno" Binding="{Binding Breed}" Width="*"/>
+                    <DataGridTextColumn Header="Majitel" Binding="{Binding OwnerId}" Width="2"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <!-- Detail -->
+            <Border Grid.Column="1" Margin="12,0,0,0" Padding="12"
+                    BorderBrush="{StaticResource Brush.Border}" BorderThickness="1" CornerRadius="6" Background="{StaticResource Brush.BgAlt}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="160"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Row="0" Grid.ColumnSpan="2" Text="Detail zvířete" FontWeight="SemiBold" Margin="0,0,0,8"/>
+
+                    <TextBlock Grid.Row="1" Text="Jméno" VerticalAlignment="Center"/>
+                    <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding SelectedAnimal.Name, UpdateSourceTrigger=PropertyChanged}"/>
+
+                    <TextBlock Grid.Row="2" Text="Druh" VerticalAlignment="Center" Margin="0,8,0,0"/>
+                    <TextBox Grid.Row="2" Grid.Column="1" Margin="0,8,0,0" Text="{Binding SelectedAnimal.Species}"/>
+
+                    <TextBlock Grid.Row="3" Text="Plemeno" VerticalAlignment="Center" Margin="0,8,0,0"/>
+                    <TextBox Grid.Row="3" Grid.Column="1" Margin="0,8,0,0" Text="{Binding SelectedAnimal.Breed}"/>
+
+                    <TextBlock Grid.Row="4" Text="Majitel (OwnerId)" VerticalAlignment="Center" Margin="0,8,0,0"/>
+                    <TextBox Grid.Row="4" Grid.Column="1" Margin="0,8,0,0" Text="{Binding SelectedAnimal.OwnerId}"/>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>
