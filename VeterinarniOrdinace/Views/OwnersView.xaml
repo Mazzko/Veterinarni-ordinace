@@ -9,7 +9,7 @@
 
         <!-- Toolbar -->
         <StackPanel Orientation="Horizontal">
-            <Button Content="+ Přidat" Command="{Binding AddOwnerCommand}" Style="{StaticResource PrimaryButton}"/>
+            <Button Content="🞤 Přidat" Command="{Binding AddOwnerCommand}" Style="{StaticResource PrimaryButton}"/>
             <Button Content="✎ Upravit" Command="{Binding EditOwnerCommand}" Style="{StaticResource SecondaryButton}"/>
             <Button Content="🗑 Smazat" Command="{Binding DeleteOwnerCommand}" Style="{StaticResource SecondaryButton}"/>
             <Button Content="⭳ Uložit" Command="{Binding SaveAllCommand}" Style="{StaticResource SecondaryButton}"/>

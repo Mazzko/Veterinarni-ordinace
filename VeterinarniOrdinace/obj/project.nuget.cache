@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "kZzflVObDryCGQl+6ZLljZNSmgMoa7Ms+WJTjR4ErYvYzfC4tYSyfmuD7jFSnkR8tNH5WbkLdFV7C9zH/LTwWA==",
+  "dgSpecHash": "iZBgTO4MhEw+hdFTPhSfvSHv9XFIOYr2l4kY6ZjgZ5JJqBXrg0tlGr6Uusba2dnK0+6fbaOwHuZkcb4rGv+Z5w==",
   "success": true,
   "projectFilePath": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\VeterinarniOrdinace.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\janga\\.nuget\\packages\\microsoft.data.sqlite\\10.0.1\\microsoft.data.sqlite.10.0.1.nupkg.sha512",
+    "C:\\Users\\janga\\.nuget\\packages\\microsoft.data.sqlite.core\\10.0.1\\microsoft.data.sqlite.core.10.0.1.nupkg.sha512",
+    "C:\\Users\\janga\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.11\\sqlitepclraw.bundle_e_sqlite3.2.1.11.nupkg.sha512",
+    "C:\\Users\\janga\\.nuget\\packages\\sqlitepclraw.core\\2.1.11\\sqlitepclraw.core.2.1.11.nupkg.sha512",
+    "C:\\Users\\janga\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.11\\sqlitepclraw.lib.e_sqlite3.2.1.11.nupkg.sha512",
+    "C:\\Users\\janga\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.11\\sqlitepclraw.provider.e_sqlite3.2.1.11.nupkg.sha512",
+    "C:\\Users\\janga\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+  ],
   "logs": []
 }
