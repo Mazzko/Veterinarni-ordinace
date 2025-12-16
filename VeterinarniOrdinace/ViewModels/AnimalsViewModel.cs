@@ -14,6 +14,8 @@ namespace VeterinarniOrdinace.ViewModels
 {
     public class AnimalsViewModel : BaseViewModel
     {
+        private readonly MainViewModel _main;
+
         private readonly AnimalRepository _animalsRepo = new();
         private readonly OwnerRepository _ownersRepo = new();
 
@@ -99,9 +101,12 @@ namespace VeterinarniOrdinace.ViewModels
         public ICommand DeleteAnimalCommand { get; }
         public ICommand UpdateAnimalCommand { get; }
         public ICommand CancelAnimalCommand { get; }
+        public ICommand AddVisitForAnimalCommand { get; }
 
-        public AnimalsViewModel()
+        public AnimalsViewModel(MainViewModel main)
         {
+            _main = main;
+
             foreach (var o in _ownersRepo.GetAll()) Owners.Add(o);
             foreach (var a in _animalsRepo.GetAll()) Animals.Add(a);
             foreach (var a in Animals)
@@ -112,6 +117,14 @@ namespace VeterinarniOrdinace.ViewModels
             DeleteAnimalCommand = new RelayCommand(DeleteSelected, () => SelectedAnimal != null);
             UpdateAnimalCommand = new RelayCommand(UpdateSelected, () => SelectedAnimal != null);
             CancelAnimalCommand = new RelayCommand(CancelChanges, () => SelectedAnimal != null && _backup != null);
+            AddVisitForAnimalCommand = new RelayCommand(
+                () =>
+                {
+                    if (SelectedAnimal == null) return;
+                    _main.CreateVisitForAnimal(SelectedAnimal.Id);
+                },
+                () => SelectedAnimal != null
+                );
         }
 
         public void AddAnimalWithOwner(int ownerId)

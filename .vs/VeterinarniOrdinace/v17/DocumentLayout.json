@@ -3,36 +3,72 @@
   "WorkspaceRootPath": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|c:\\users\\janga\\source\\repos\\veterinarniordinace\\veterinarniordinace\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|solutionrelative:veterinarniordinace\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\veterinarniordinace\\views\\visitsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|solutionrelative:veterinarniordinace\\views\\visitsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\veterinarniordinace\\data\\animalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|solutionrelative:veterinarniordinace\\data\\animalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|c:\\users\\janga\\source\\repos\\veterinarniordinace\\veterinarniordinace\\viewmodels\\visitsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|solutionrelative:veterinarniordinace\\viewmodels\\visitsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\veterinarniordinace\\views\\animalsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|solutionrelative:veterinarniordinace\\views\\animalsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|c:\\users\\janga\\source\\repos\\veterinarniordinace\\veterinarniordinace\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|solutionrelative:veterinarniordinace\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\veterinarniordinace\\viewmodels\\animalsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|solutionrelative:veterinarniordinace\\viewmodels\\animalsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\veterinarniordinace\\viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|solutionrelative:veterinarniordinace\\viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\veterinarniordinace\\viewmodels\\ownersviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|solutionrelative:veterinarniordinace\\viewmodels\\ownersviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\veterinarniordinace\\views\\visitsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|solutionrelative:veterinarniordinace\\views\\visitsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|c:\\users\\janga\\source\\repos\\veterinarniordinace\\veterinarniordinace\\views\\visitsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|solutionrelative:veterinarniordinace\\views\\visitsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\veterinarniordinace\\views\\animalsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|solutionrelative:veterinarniordinace\\views\\animalsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\veterinarniordinace\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|solutionrelative:veterinarniordinace\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\veterinarniordinace\\views\\ownersview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|solutionrelative:veterinarniordinace\\views\\ownersview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\veterinarniordinace\\views\\ownersview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|solutionrelative:veterinarniordinace\\views\\ownersview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\veterinarniordinace\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|solutionrelative:veterinarniordinace\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\veterinarniordinace\\data\\ownerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|solutionrelative:veterinarniordinace\\data\\ownerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|c:\\users\\janga\\source\\repos\\veterinarniordinace\\veterinarniordinace\\models\\visit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|solutionrelative:veterinarniordinace\\models\\visit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\veterinarniordinace\\models\\owner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|solutionrelative:veterinarniordinace\\models\\owner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|c:\\users\\janga\\source\\repos\\veterinarniordinace\\veterinarniordinace\\data\\visitrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|solutionrelative:veterinarniordinace\\data\\visitrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\veterinarniordinace\\data\\animalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|solutionrelative:veterinarniordinace\\data\\animalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\veterinarniordinace\\viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|solutionrelative:veterinarniordinace\\viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\veterinarniordinace\\views\\animalsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|solutionrelative:veterinarniordinace\\views\\animalsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\veterinarniordinace\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,32 +79,12 @@
       "RelativeMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|solutionrelative:veterinarniordinace\\models\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\veterinarniordinace\\views\\animalsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|solutionrelative:veterinarniordinace\\views\\animalsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\veterinarniordinace\\viewmodels\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|solutionrelative:veterinarniordinace\\viewmodels\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\veterinarniordinace\\models\\owner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|solutionrelative:veterinarniordinace\\models\\owner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\veterinarniordinace\\viewmodels\\ownersviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|solutionrelative:veterinarniordinace\\viewmodels\\ownersviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\veterinarniordinace\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|solutionrelative:veterinarniordinace\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\veterinarniordinace\\views\\ownersview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|solutionrelative:veterinarniordinace\\views\\ownersview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\veterinarniordinace\\data\\ownerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|solutionrelative:veterinarniordinace\\data\\ownerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{257BC9DB-70CE-4ED2-BCED-4FBE43EC3C8C}|VeterinarniOrdinace\\VeterinarniOrdinace.csproj|C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\veterinarniordinace\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -96,7 +112,7 @@
         },
         {
           "DockedWidth": 248,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -104,86 +120,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\ViewModels\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "VeterinarniOrdinace\\ViewModels\\MainViewModel.cs",
+              "ToolTip": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\ViewModels\\MainViewModel.cs",
+              "RelativeToolTip": "VeterinarniOrdinace\\ViewModels\\MainViewModel.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAywBsAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T19:16:02.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "AnimalsViewModel.cs",
               "DocumentMoniker": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\ViewModels\\AnimalsViewModel.cs",
               "RelativeDocumentMoniker": "VeterinarniOrdinace\\ViewModels\\AnimalsViewModel.cs",
               "ToolTip": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\ViewModels\\AnimalsViewModel.cs",
               "RelativeToolTip": "VeterinarniOrdinace\\ViewModels\\AnimalsViewModel.cs",
-              "ViewState": "AQIAAHIAAAAAAAAAAAAAwHkAAAANAAAA",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAuwGsAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T18:58:29.899Z"
+              "WhenOpened": "2025-12-15T18:58:29.899Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AnimalsView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\Views\\AnimalsView.xaml.cs",
-              "RelativeDocumentMoniker": "VeterinarniOrdinace\\Views\\AnimalsView.xaml.cs",
-              "ToolTip": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\Views\\AnimalsView.xaml.cs",
-              "RelativeToolTip": "VeterinarniOrdinace\\Views\\AnimalsView.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T19:04:28.704Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "OwnersView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\Views\\OwnersView.xaml.cs",
-              "RelativeDocumentMoniker": "VeterinarniOrdinace\\Views\\OwnersView.xaml.cs",
-              "ToolTip": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\Views\\OwnersView.xaml.cs",
-              "RelativeToolTip": "VeterinarniOrdinace\\Views\\OwnersView.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T16:21:12.304Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "VisitsView.xaml",
               "DocumentMoniker": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\Views\\VisitsView.xaml",
               "RelativeDocumentMoniker": "VeterinarniOrdinace\\Views\\VisitsView.xaml",
               "ToolTip": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\Views\\VisitsView.xaml",
               "RelativeToolTip": "VeterinarniOrdinace\\Views\\VisitsView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-11T09:25:09.484Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BaseViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\ViewModels\\BaseViewModel.cs",
-              "RelativeDocumentMoniker": "VeterinarniOrdinace\\ViewModels\\BaseViewModel.cs",
-              "ToolTip": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\ViewModels\\BaseViewModel.cs",
-              "RelativeToolTip": "VeterinarniOrdinace\\ViewModels\\BaseViewModel.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAmwBsAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T15:37:22.261Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AnimalRepository.cs",
-              "DocumentMoniker": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\Data\\AnimalRepository.cs",
-              "RelativeDocumentMoniker": "VeterinarniOrdinace\\Data\\AnimalRepository.cs",
-              "ToolTip": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\Data\\AnimalRepository.cs",
-              "RelativeToolTip": "VeterinarniOrdinace\\Data\\AnimalRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T18:52:53.232Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\ViewModels\\MainViewModel.cs",
-              "RelativeDocumentMoniker": "VeterinarniOrdinace\\ViewModels\\MainViewModel.cs",
-              "ToolTip": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\ViewModels\\MainViewModel.cs",
-              "RelativeToolTip": "VeterinarniOrdinace\\ViewModels\\MainViewModel.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAkwB4AAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T19:16:02.471Z",
+              "WhenOpened": "2025-11-11T09:25:09.484Z",
               "EditorCaption": ""
             },
             {
@@ -195,54 +165,121 @@
               "ToolTip": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\MainWindow.xaml",
               "RelativeToolTip": "VeterinarniOrdinace\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-11T09:25:12.843Z"
+              "WhenOpened": "2025-11-11T09:25:12.843Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "VeterinarniOrdinace\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\MainWindow.xaml.cs",
-              "RelativeToolTip": "VeterinarniOrdinace\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAABAAAA",
+              "DocumentIndex": 1,
+              "Title": "VisitsViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\ViewModels\\VisitsViewModel.cs",
+              "RelativeDocumentMoniker": "VeterinarniOrdinace\\ViewModels\\VisitsViewModel.cs",
+              "ToolTip": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\ViewModels\\VisitsViewModel.cs",
+              "RelativeToolTip": "VeterinarniOrdinace\\ViewModels\\VisitsViewModel.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAADwvzQAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T10:34:41.658Z"
+              "WhenOpened": "2025-12-16T08:50:57.046Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 5,
+              "Title": "OwnersViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\ViewModels\\OwnersViewModel.cs",
+              "RelativeDocumentMoniker": "VeterinarniOrdinace\\ViewModels\\OwnersViewModel.cs",
+              "ToolTip": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\ViewModels\\OwnersViewModel.cs",
+              "RelativeToolTip": "VeterinarniOrdinace\\ViewModels\\OwnersViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T15:25:10.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "AnimalsView.xaml",
               "DocumentMoniker": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\Views\\AnimalsView.xaml",
               "RelativeDocumentMoniker": "VeterinarniOrdinace\\Views\\AnimalsView.xaml",
               "ToolTip": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\Views\\AnimalsView.xaml",
               "RelativeToolTip": "VeterinarniOrdinace\\Views\\AnimalsView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-11T09:24:07.99Z"
+              "WhenOpened": "2025-11-11T09:24:07.99Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "RelayCommand.cs",
-              "DocumentMoniker": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\ViewModels\\RelayCommand.cs",
-              "RelativeDocumentMoniker": "VeterinarniOrdinace\\ViewModels\\RelayCommand.cs",
-              "ToolTip": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\ViewModels\\RelayCommand.cs",
-              "RelativeToolTip": "VeterinarniOrdinace\\ViewModels\\RelayCommand.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACgAAAA4AAAA",
+              "DocumentIndex": 8,
+              "Title": "OwnersView.xaml",
+              "DocumentMoniker": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\Views\\OwnersView.xaml",
+              "RelativeDocumentMoniker": "VeterinarniOrdinace\\Views\\OwnersView.xaml",
+              "ToolTip": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\Views\\OwnersView.xaml",
+              "RelativeToolTip": "VeterinarniOrdinace\\Views\\OwnersView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-11T10:37:08.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OwnersView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\Views\\OwnersView.xaml.cs",
+              "RelativeDocumentMoniker": "VeterinarniOrdinace\\Views\\OwnersView.xaml.cs",
+              "ToolTip": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\Views\\OwnersView.xaml.cs",
+              "RelativeToolTip": "VeterinarniOrdinace\\Views\\OwnersView.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T16:09:09.807Z"
+              "WhenOpened": "2025-12-15T16:21:12.304Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "OwnersViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\ViewModels\\OwnersViewModel.cs",
-              "RelativeDocumentMoniker": "VeterinarniOrdinace\\ViewModels\\OwnersViewModel.cs",
-              "ToolTip": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\ViewModels\\OwnersViewModel.cs",
-              "RelativeToolTip": "VeterinarniOrdinace\\ViewModels\\OwnersViewModel.cs",
-              "ViewState": "AQIAAFMAAAAAAAAAAAAEwGMAAABVAAAA",
+              "Title": "VisitRepository.cs",
+              "DocumentMoniker": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\Data\\VisitRepository.cs",
+              "RelativeDocumentMoniker": "VeterinarniOrdinace\\Data\\VisitRepository.cs",
+              "ToolTip": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\Data\\VisitRepository.cs",
+              "RelativeToolTip": "VeterinarniOrdinace\\Data\\VisitRepository.cs",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAqwGcAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T15:25:10.919Z"
+              "WhenOpened": "2025-12-16T08:20:12.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AnimalRepository.cs",
+              "DocumentMoniker": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\Data\\AnimalRepository.cs",
+              "RelativeDocumentMoniker": "VeterinarniOrdinace\\Data\\AnimalRepository.cs",
+              "ToolTip": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\Data\\AnimalRepository.cs",
+              "RelativeToolTip": "VeterinarniOrdinace\\Data\\AnimalRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T18:52:53.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AnimalsView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\Views\\AnimalsView.xaml.cs",
+              "RelativeDocumentMoniker": "VeterinarniOrdinace\\Views\\AnimalsView.xaml.cs",
+              "ToolTip": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\Views\\AnimalsView.xaml.cs",
+              "RelativeToolTip": "VeterinarniOrdinace\\Views\\AnimalsView.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T19:04:28.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BaseViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\ViewModels\\BaseViewModel.cs",
+              "RelativeDocumentMoniker": "VeterinarniOrdinace\\ViewModels\\BaseViewModel.cs",
+              "ToolTip": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\ViewModels\\BaseViewModel.cs",
+              "RelativeToolTip": "VeterinarniOrdinace\\ViewModels\\BaseViewModel.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAmwBsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T15:37:22.261Z"
             },
             {
               "$type": "Document",
@@ -254,11 +291,63 @@
               "RelativeToolTip": "VeterinarniOrdinace\\Models\\Owner.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T09:28:00.891Z"
+              "WhenOpened": "2025-11-11T09:28:00.891Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
+              "Title": "OwnerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\Data\\OwnerRepository.cs",
+              "RelativeDocumentMoniker": "VeterinarniOrdinace\\Data\\OwnerRepository.cs",
+              "ToolTip": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\Data\\OwnerRepository.cs",
+              "RelativeToolTip": "VeterinarniOrdinace\\Data\\OwnerRepository.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAowDkAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T14:44:17.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VisitsView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\Views\\VisitsView.xaml.cs",
+              "RelativeDocumentMoniker": "VeterinarniOrdinace\\Views\\VisitsView.xaml.cs",
+              "ToolTip": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\Views\\VisitsView.xaml.cs",
+              "RelativeToolTip": "VeterinarniOrdinace\\Views\\VisitsView.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T09:01:40.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Visit.cs",
+              "DocumentMoniker": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\Models\\Visit.cs",
+              "RelativeDocumentMoniker": "VeterinarniOrdinace\\Models\\Visit.cs",
+              "ToolTip": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\Models\\Visit.cs",
+              "RelativeToolTip": "VeterinarniOrdinace\\Models\\Visit.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T08:46:06.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\ViewModels\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "VeterinarniOrdinace\\ViewModels\\RelayCommand.cs",
+              "ToolTip": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\ViewModels\\RelayCommand.cs",
+              "RelativeToolTip": "VeterinarniOrdinace\\ViewModels\\RelayCommand.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACgAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T16:09:09.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "Animal.cs",
               "DocumentMoniker": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\Models\\Animal.cs",
               "RelativeDocumentMoniker": "VeterinarniOrdinace\\Models\\Animal.cs",
@@ -270,7 +359,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\App.xaml.cs",
               "RelativeDocumentMoniker": "VeterinarniOrdinace\\App.xaml.cs",
@@ -282,41 +371,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "OwnersView.xaml",
-              "DocumentMoniker": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\Views\\OwnersView.xaml",
-              "RelativeDocumentMoniker": "VeterinarniOrdinace\\Views\\OwnersView.xaml",
-              "ToolTip": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\Views\\OwnersView.xaml",
-              "RelativeToolTip": "VeterinarniOrdinace\\Views\\OwnersView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-11T10:37:08.858Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "OwnerRepository.cs",
-              "DocumentMoniker": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\Data\\OwnerRepository.cs",
-              "RelativeDocumentMoniker": "VeterinarniOrdinace\\Data\\OwnerRepository.cs",
-              "ToolTip": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\Data\\OwnerRepository.cs",
-              "RelativeToolTip": "VeterinarniOrdinace\\Data\\OwnerRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T14:44:17.775Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 17,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "VeterinarniOrdinace\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\MainWindow.xaml.cs",
+              "RelativeToolTip": "VeterinarniOrdinace\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T10:34:41.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\App.xaml",
               "RelativeDocumentMoniker": "VeterinarniOrdinace\\App.xaml",
               "ToolTip": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\App.xaml",
               "RelativeToolTip": "VeterinarniOrdinace\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-11T09:31:05.281Z"
+              "WhenOpened": "2025-11-11T09:31:05.281Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "DatabaseInitializer.cs",
               "DocumentMoniker": "C:\\Users\\janga\\source\\repos\\VeterinarniOrdinace\\VeterinarniOrdinace\\Data\\DatabaseInitializer.cs",
               "RelativeDocumentMoniker": "VeterinarniOrdinace\\Data\\DatabaseInitializer.cs",

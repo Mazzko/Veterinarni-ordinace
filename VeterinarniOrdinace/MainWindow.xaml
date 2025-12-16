@@ -40,7 +40,7 @@
             </TabItem>
 
             <TabItem Header="Návštěvy">
-                <v:VisitsView />
+                <v:VisitsView DataContext="{Binding VisitsVM}" />
             </TabItem>
         </TabControl>
     </DockPanel>

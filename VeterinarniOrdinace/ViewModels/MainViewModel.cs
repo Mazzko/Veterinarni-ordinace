@@ -13,6 +13,8 @@ namespace VeterinarniOrdinace.ViewModels
         public OwnersViewModel OwnersVM { get; }
         public AnimalsViewModel AnimalsVM {  get; }
 
+        public VisitsViewModel VisitsVM { get; }
+
         private int _selectedTabIndex;
         public int SelectedTabIndex
         {
@@ -23,12 +25,18 @@ namespace VeterinarniOrdinace.ViewModels
         public MainViewModel()
         {
             OwnersVM = new OwnersViewModel(this);
-            AnimalsVM = new AnimalsViewModel();    
+            AnimalsVM = new AnimalsViewModel(this);  
+            VisitsVM = new VisitsViewModel();
         }
         public void CreateAnimalForOwner(int ownerId)
         {
             SelectedTabIndex = 1;           
             AnimalsVM.AddAnimalWithOwner(ownerId);
+        }
+        public void CreateVisitForAnimal(int animalId)
+        {
+            SelectedTabIndex = 2;
+            VisitsVM.AddVisitWithAnimal(animalId);
         }
     }
 }
