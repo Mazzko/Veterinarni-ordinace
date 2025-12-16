@@ -81,13 +81,13 @@ namespace VeterinarniOrdinace.ViewModels
                 if (SelectedVisit == null || value == null) return;
 
                 SelectedVisit.AnimalId = value.Id;
+                SelectedVisit.AnimalName = value.Name;
 
                 OnPropertyChanged(nameof(SelectedAnimalForVisit));
                 OnPropertyChanged(nameof(SelectedVisitAnimalName));
             }
         }
 
-        private DateTime? _selectedVisitDateOnly;
         public DateTime? SelectedVisitDateOnly
         {
             get => SelectedVisit?.Date.Date;
@@ -104,7 +104,6 @@ namespace VeterinarniOrdinace.ViewModels
             }
         }
 
-        private string _selectedVisitTimeText = "";
         public string SelectedVisitTimeText
         {
             get => SelectedVisit == null ? "" : SelectedVisit.Date.ToString("HH:mm");
@@ -133,7 +132,19 @@ namespace VeterinarniOrdinace.ViewModels
             }
         }
 
-        public ICommand AddVisitCommand { get; }
+        public ObservableCollection<string> VisitStatuses { get; } = new() { "Naplánováno", "Dokončeno", "Zrušeno" };
+        private const string DefaultStatus = "Naplánováno";
+
+        private void NormalizeStatus(Visit v)
+        {
+            v.Status = (v.Status ?? DefaultStatus).Trim();
+            if (!VisitStatuses.Contains(v.Status))
+                v.Status = DefaultStatus;
+        }
+
+
+        public string? AnimalName { get; set; }
+
         public ICommand DeleteVisitCommand { get; }
         public ICommand UpdateVisitCommand { get; }
         public ICommand CancelVisitCommand { get; } 
@@ -142,10 +153,15 @@ namespace VeterinarniOrdinace.ViewModels
         {
             foreach (var a in _animalsRepo.GetAll()) Animals.Add(a);
             foreach (var v in _visitsRepo.GetAll()) Visits.Add(v);
+            foreach (var v in Visits)
+            {
+                v.AnimalName = Animals.FirstOrDefault(a => a.Id == v.AnimalId)?.Name;
+            }
+            foreach (var v in Visits)
+                NormalizeStatus(v);
 
             RefreshFiltered();
 
-            AddVisitCommand = new RelayCommand(AddVisit);
             DeleteVisitCommand = new RelayCommand(DeleteSelected, () => SelectedVisit != null);
             UpdateVisitCommand = new RelayCommand(UpdateSelected, () => SelectedVisit != null);
             CancelVisitCommand = new RelayCommand(CancelChanges, () => SelectedVisit != null && _backup != null);
@@ -153,6 +169,7 @@ namespace VeterinarniOrdinace.ViewModels
 
         public void AddVisitWithAnimal(int animalId)
         {
+            Reload();
             VisitSearchText = "";
 
             var v = new Visit
@@ -160,29 +177,21 @@ namespace VeterinarniOrdinace.ViewModels
                 AnimalId = animalId,
                 Date = DateTime.Now,
                 Reason = "Kontrola",
-                Status = "Plánováno"
+                Status = DefaultStatus
             };
+            v.AnimalName = Animals.FirstOrDefault(a => a.Id == v.AnimalId)?.Name;
+            NormalizeStatus(v);
 
             v.Id = _visitsRepo.Insert(v);
             Visits.Add(v);
+
             RefreshFiltered();
 
             SelectedVisit = v;
             _backup = Clone(v);
 
-            OnPropertyChanged(nameof(SelectedAnimalForVisit));
-            OnPropertyChanged(nameof(SelectedVisitAnimalName));
-        }
-
-        private void AddVisit()
-        {
-            if (Animals.Count == 0)
-            {
-                MessageBox.Show("Nejdřív vytvořte zvíře.", "Nelze přidat návštěvu");
-                return;
-            }
-
-            AddVisitWithAnimal(Animals[0].Id);
+           OnPropertyChanged(nameof(SelectedAnimalForVisit));
+           OnPropertyChanged(nameof(SelectedVisitAnimalName));
         }
 
         private void DeleteSelected()
@@ -248,7 +257,8 @@ namespace VeterinarniOrdinace.ViewModels
             Reason = v.Reason,
             Diagnosis = v.Diagnosis,
             Price = v.Price,
-            Status = v.Status
+            Status = v.Status,
+            AnimalName = v.AnimalName
         };
 
         private bool HasUnsavedChanges()
@@ -262,6 +272,21 @@ namespace VeterinarniOrdinace.ViewModels
                 || SelectedVisit.Price != _backup.Price
                 || SelectedVisit.Status != _backup.Status;
         }
+        public void Reload()
+        {
+            Visits.Clear();
+            Animals.Clear();
 
+            foreach (var a in _animalsRepo.GetAll()) Animals.Add(a);
+            foreach (var v in _visitsRepo.GetAll()) Visits.Add(v);
+
+            foreach (var v in Visits)
+                v.AnimalName = Animals.FirstOrDefault(a => a.Id == v.AnimalId)?.Name;
+
+            foreach (var v in Visits)
+                NormalizeStatus(v);
+
+            RefreshFiltered();
+        }
     }
 }

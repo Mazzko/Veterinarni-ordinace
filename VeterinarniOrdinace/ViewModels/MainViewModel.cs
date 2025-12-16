@@ -28,10 +28,10 @@ namespace VeterinarniOrdinace.ViewModels
             AnimalsVM = new AnimalsViewModel(this);  
             VisitsVM = new VisitsViewModel();
         }
-        public void CreateAnimalForOwner(int ownerId)
+        public void CreateAnimalForOwner(int ownerId, string ownerName)
         {
-            SelectedTabIndex = 1;           
-            AnimalsVM.AddAnimalWithOwner(ownerId);
+            SelectedTabIndex = 1;
+            AnimalsVM.AddAnimalWithOwner(ownerId, ownerName);
         }
         public void CreateVisitForAnimal(int animalId)
         {

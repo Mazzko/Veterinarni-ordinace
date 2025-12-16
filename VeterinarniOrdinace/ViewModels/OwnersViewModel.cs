@@ -97,8 +97,9 @@ namespace VeterinarniOrdinace.ViewModels
             DeleteOwnerCommand = new RelayCommand(DeleteSelected, () => SelectedOwner != null);
             UpdateOwnerCommand = new RelayCommand(UpdateSelected, () => SelectedOwner != null);
             CancelOwnerCommand = new RelayCommand(CancelChanges, () => SelectedOwner != null && _backup != null);
-            AddAnimalForOwnerCommand = new RelayCommand(() => _main.CreateAnimalForOwner(SelectedOwner!.Id),
-                                                        () => SelectedOwner != null);
+            AddAnimalForOwnerCommand = new RelayCommand(() => _main.CreateAnimalForOwner(SelectedOwner!.Id, SelectedOwner!.FullName),
+                                                        () => SelectedOwner != null
+);
 
             PropertyChanged += (_, e) =>
             {
@@ -134,6 +135,8 @@ namespace VeterinarniOrdinace.ViewModels
             RefreshFiltered();
 
             SelectedOwner = o;
+            _main.AnimalsVM.Reload();
+            _main.VisitsVM.Reload();
         }
         private void DeleteSelected()
         {
@@ -143,7 +146,8 @@ namespace VeterinarniOrdinace.ViewModels
 
             Owners.Remove(SelectedOwner);
             SelectedOwner = null;
-
+            _main.AnimalsVM.Reload();
+            _main.VisitsVM.Reload();
             RefreshFiltered();
         }
         private void UpdateSelected()

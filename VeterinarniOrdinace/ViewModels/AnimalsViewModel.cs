@@ -127,29 +127,28 @@ namespace VeterinarniOrdinace.ViewModels
                 );
         }
 
-        public void AddAnimalWithOwner(int ownerId)
+        public void AddAnimalWithOwner(int ownerId, string ownerName)
         {
+            Reload();
             AnimalSearchText = "";
 
             var a = new Animal
             {
                 Name = "Nové zvíře",
                 Species = "Pes",
-                OwnerId = ownerId
+                OwnerId = ownerId,
+                OwnerName = ownerName
             };
 
             a.Id = _animalsRepo.Insert(a);
-            a.OwnerName = Owners.FirstOrDefault(o => o.Id == a.OwnerId)?.FullName;
             Animals.Add(a);
-            
 
+            RefreshFiltered();
             SelectedAnimal = a;
             _backup = Clone(a);
 
             OnPropertyChanged(nameof(SelectedOwnerForAnimal));
             OnPropertyChanged(nameof(SelectedAnimalOwnerName));
-
-            RefreshFiltered();
         }
 
         private void DeleteSelected()
@@ -158,6 +157,7 @@ namespace VeterinarniOrdinace.ViewModels
             _animalsRepo.Delete(SelectedAnimal.Id);
             Animals.Remove(SelectedAnimal);
             SelectedAnimal = null;
+            _main.VisitsVM.Reload();
             RefreshFiltered();
         }
 
@@ -209,7 +209,8 @@ namespace VeterinarniOrdinace.ViewModels
             Name = a.Name,
             Species = a.Species,
             Breed = a.Breed,
-            OwnerId = a.OwnerId
+            OwnerId = a.OwnerId,
+            OwnerName = a.OwnerName
         };
 
         private bool HasUnsavedChanges()
@@ -219,6 +220,20 @@ namespace VeterinarniOrdinace.ViewModels
                 || SelectedAnimal.Species != _backup.Species
                 || SelectedAnimal.Breed != _backup.Breed
                 || SelectedAnimal.OwnerId != _backup.OwnerId;
+        }
+
+        public void Reload()
+        {
+            Animals.Clear();
+            Owners.Clear();
+
+            foreach (var o in _ownersRepo.GetAll()) Owners.Add(o);
+            foreach (var a in _animalsRepo.GetAll()) Animals.Add(a);
+
+            foreach (var a in Animals)
+                a.OwnerName = Owners.FirstOrDefault(o => o.Id == a.OwnerId)?.FullName;
+
+            RefreshFiltered();
         }
     }
 }

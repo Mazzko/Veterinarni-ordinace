@@ -15,5 +15,7 @@ namespace VeterinarniOrdinace.Models
         public string? Diagnosis { get; set; }
         public double? Price { get; set; }
         public string? Status { get; set; } = "Naplánováno"; // Naplánováno / Dokončeno / Zrušeno
+
+        public string? AnimalName { get; set; }
     }
 }

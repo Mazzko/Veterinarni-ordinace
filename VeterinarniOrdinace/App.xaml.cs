@@ -16,10 +16,10 @@ namespace VeterinarniOrdinace
             base.OnStartup(e);
 
             DatabaseInitializer.Initialize();
+            DbSeed.SeedIfEmpty();
 
             var window = new MainWindow();
             window.Show();
         }
     }
-
 }
