@@ -10,14 +10,17 @@ namespace VeterinarniOrdinace.Data
 {
     public static class DatabaseInitializer
     {
+        private const string DbFileName = "veterina.db";
         public static string DbPath =>
-            Path.Combine(AppContext.BaseDirectory, "Data", "veterina.db");
+            global::System.IO.Path.Combine(global::System.AppContext.BaseDirectory, "Data", DbFileName);
 
         public static string ConnectionString => $"Data Source={DbPath}";
 
         public static void Initialize()
         {
-            Directory.CreateDirectory(Path.GetDirectoryName(DbPath)!);
+            var dir = global::System.IO.Path.GetDirectoryName(DbPath);
+            if (!string.IsNullOrWhiteSpace(dir))
+                global::System.IO.Directory.CreateDirectory(dir);
 
             using var connecition = new SqliteConnection(ConnectionString);
             connecition.Open();

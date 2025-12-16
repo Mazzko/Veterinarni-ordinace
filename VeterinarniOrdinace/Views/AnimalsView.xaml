@@ -9,10 +9,7 @@
 
         <!-- Toolbar -->
         <StackPanel Orientation="Horizontal">
-            <Button Content="🞤 Přidat" Command="{Binding AddAnimalCommand}" Style="{StaticResource PrimaryButton}"/>
-            <Button Content="✎ Upravit" Command="{Binding EditAnimalCommand}" Style="{StaticResource SecondaryButton}"/>
             <Button Content="🗑 Smazat" Command="{Binding DeleteAnimalCommand}" Style="{StaticResource SecondaryButton}"/>
-            <Button Content="⭳ Uložit" Command="{Binding SaveAllCommand}" Style="{StaticResource SecondaryButton}"/>
             <TextBox Width="220" Margin="16,0,0,0" Text="{Binding AnimalSearchText, UpdateSourceTrigger=PropertyChanged}"/>
         </StackPanel>
 
@@ -25,12 +22,13 @@
 
             <!-- Seznam -->
             <DataGrid ItemsSource="{Binding FilteredAnimals}" 
-                      SelectedItem="{Binding SelectedAnimal}">
+                      SelectedItem="{Binding SelectedAnimal}"
+                      AutoGenerateColumns="False">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Jméno" Binding="{Binding Name}" Width="2*"/>
                     <DataGridTextColumn Header="Druh" Binding="{Binding Species}" Width="*"/>
                     <DataGridTextColumn Header="Plemeno" Binding="{Binding Breed}" Width="*"/>
-                    <DataGridTextColumn Header="Majitel" Binding="{Binding OwnerId}" Width="2*"/>
+                    <DataGridTextColumn Header="Majitel" Binding="{Binding OwnerName}" Width="2*"/>
                 </DataGrid.Columns>
             </DataGrid>
 
@@ -54,21 +52,32 @@
 
                     <TextBlock Grid.Row="0" Grid.ColumnSpan="2" Text="Detail zvířete" FontWeight="SemiBold" Margin="0,0,0,8"/>
 
-                    <TextBlock Grid.Row="1" Text="Jméno" VerticalAlignment="Center" />
-                    <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding SelectedAnimal.Name, UpdateSourceTrigger=PropertyChanged}"/>
+                    <TextBlock Grid.Row="1" Text="Majitel" VerticalAlignment="Top" Margin="0,8,0,0" />
+                    <ComboBox Grid.Row="1" Grid.Column="1" Margin="0,8,0,0" ItemsSource="{Binding Owners, UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding SelectedOwnerForAnimal}">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <TextBlock Text="{Binding FullName}" FontWeight="SemiBold"/>
+                                    <TextBlock Text="{Binding Phone}" Opacity="0.7" FontSize="12"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
 
-                    <TextBlock Grid.Row="2" Text="Druh" VerticalAlignment="Center" Margin="0,8,0,0" />
-                    <TextBox Grid.Row="2" Grid.Column="1" Margin="0,8,0,0" Text="{Binding SelectedAnimal.Species}"/>
+                    <TextBlock Grid.Row="2" Text="Jméno" VerticalAlignment="Center" />
+                    <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding SelectedAnimal.Name, UpdateSourceTrigger=PropertyChanged}"/>
 
-                    <TextBlock Grid.Row="3" Text="Plemeno" VerticalAlignment="Center" Margin="0,8,0,0" />
-                    <TextBox Grid.Row="3" Grid.Column="1" Margin="0,8,0,0" Text="{Binding SelectedAnimal.Breed}"/>
+                    <TextBlock Grid.Row="3" Text="Druh" VerticalAlignment="Center" Margin="0,8,0,0" />
+                    <TextBox Grid.Row="3" Grid.Column="1" Margin="0,8,0,0" Text="{Binding SelectedAnimal.Species, UpdateSourceTrigger=PropertyChanged}"/>
 
-                    <TextBlock Grid.Row="4" Text="Majitel (OwnerId)" VerticalAlignment="Top" Margin="0,8,0,0" />
-                    <TextBox Grid.Row="4" Grid.Column="1" Margin="0,8,0,0" Text="{Binding SelectedAnimal.OwnerId}"/>
+                    <TextBlock Grid.Row="4" Text="Plemeno" VerticalAlignment="Center" Margin="0,8,0,0" />
+                    <TextBox Grid.Row="4" Grid.Column="1" Margin="0,8,0,0" Text="{Binding SelectedAnimal.Breed, UpdateSourceTrigger=PropertyChanged}"/>
+
+                    
                     
                     <StackPanel Grid.Row="6" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,12,0,0">
-                        <Button Content="Zrušit" Command="{Binding CancelOwnerEditCommand}" Margin="0,0,8,0" MinWidth="110" MinHeight="32" Style="{StaticResource SecondaryButton}"/>
-                        <Button Content="Uložit" Command="{Binding SaveAllCommand}" MinWidth="110" MinHeight="32" Style="{StaticResource PrimaryButton}"/>
+                        <Button Content="Zrušit" Command="{Binding CancelAnimalCommand}" Margin="0,0,8,0" MinWidth="110" MinHeight="32" Style="{StaticResource SecondaryButton}"/>
+                        <Button Content="Uložit" Command="{Binding UpdateAnimalCommand}" MinWidth="110" MinHeight="32" Style="{StaticResource PrimaryButton}"/>
                     </StackPanel>
                 </Grid>
             </Border>

@@ -52,7 +52,7 @@ namespace VeterinarniOrdinace.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/VeterinarniOrdinace;V1.0.0.0;component/views/visitsview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/VeterinarniOrdinace;component/views/visitsview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\VisitsView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

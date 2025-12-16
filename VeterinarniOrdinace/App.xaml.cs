@@ -11,10 +11,14 @@ namespace VeterinarniOrdinace
     public partial class App : Application
     {
 
-        private void OnStartup(object sender, StartupEventArgs e)
+        protected override void OnStartup(StartupEventArgs e)
         {
-            DatabaseInitializer.Initialize();
             base.OnStartup(e);
+
+            DatabaseInitializer.Initialize();
+
+            var window = new MainWindow();
+            window.Show();
         }
     }
 

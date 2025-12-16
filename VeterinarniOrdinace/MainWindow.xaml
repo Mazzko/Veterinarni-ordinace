@@ -17,9 +17,9 @@
         <StatusBar DockPanel.Dock="Bottom">
             <StatusBarItem Content="{Binding StatusText}"/>
             <Separator/>
-            <StatusBarItem Content="{Binding Owners.Count, StringFormat={}{0} majitelů}"/>
+            <StatusBarItem Content="{Binding OwnersVM.FilteredOwners.Count, StringFormat={}{0} majitelů}"/>
             <Separator/>
-            <StatusBarItem Content="{Binding Animals.Count, StringFormat={}{0} zvířat}"/>
+            <StatusBarItem Content="{Binding AnimalsVM.FilteredAnimals.Count, StringFormat={}{0} zvířat}"/>
             <Separator/>
             <StatusBarItem Content="{Binding Visits.Count, StringFormat={}{0} návštěv}"/>
         </StatusBar>
@@ -30,15 +30,17 @@
         </Border>
 
         <!-- Záložky -->
-        <TabControl Margin="12">
+        <TabControl SelectedIndex="{Binding SelectedTabIndex}">
             <TabItem Header="Majitelé">
-                <v:OwnersView/>
+                <v:OwnersView DataContext="{Binding OwnersVM}" />
             </TabItem>
+
             <TabItem Header="Zvířata">
-                <v:AnimalsView/>
+                <v:AnimalsView DataContext="{Binding AnimalsVM}" />
             </TabItem>
+
             <TabItem Header="Návštěvy">
-                <v:VisitsView/>
+                <v:VisitsView />
             </TabItem>
         </TabControl>
     </DockPanel>
