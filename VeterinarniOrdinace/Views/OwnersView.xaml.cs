@@ -24,5 +24,42 @@ namespace VeterinarniOrdinace.Views
         {
             InitializeComponent();
         }
+        private void OnlyNumbers(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = !e.Text.All(char.IsDigit);
+        }
+
+        private void OnlyNumbersPaste(object sender, DataObjectPastingEventArgs e)
+        {
+            if (e.DataObject.GetDataPresent(typeof(string)))
+            {
+                var text = (string)e.DataObject.GetData(typeof(string))!;
+                if (!text.All(char.IsDigit))
+                    e.CancelCommand();
+            }
+            else
+            {
+                e.CancelCommand();
+            }
+        }
+        private void Phone_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (sender is not TextBox tb) return;
+
+            tb.TextChanged -= Phone_TextChanged;
+
+            var digits = new string(tb.Text.Where(char.IsDigit).ToArray());
+
+            var formatted = string.Join(" ",
+                Enumerable.Range(0, (digits.Length + 2) / 3)
+                          .Select(i => digits.Substring(i * 3,
+                              Math.Min(3, digits.Length - i * 3)))
+            );
+
+            tb.Text = formatted;
+            tb.CaretIndex = tb.Text.Length;
+
+            tb.TextChanged += Phone_TextChanged;
+        }
     }
 }

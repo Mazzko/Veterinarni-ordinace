@@ -71,7 +71,21 @@ namespace VeterinarniOrdinace.ViewModels
                 SetProperty(ref _selectedOwner, value);
 
                 _backup = _selectedOwner != null ? CloneOwner(_selectedOwner) : null;
+                ValidateSelectedOwner();
             }
+        }
+        private string? _errorMessage;
+        public string? ErrorMessage
+        {
+            get => _errorMessage;
+            set => SetProperty(ref _errorMessage, value);
+        }
+
+        private string? _emailError;
+        public string? EmailError
+        {
+            get => _emailError;
+            set => SetProperty(ref _emailError, value);
         }
 
         public ICommand AddOwnerCommand { get; }
@@ -154,6 +168,9 @@ namespace VeterinarniOrdinace.ViewModels
         {
             if (SelectedOwner == null) return;
 
+            if (!ValidateSelectedOwner())
+                return;
+
             _repo.Update(SelectedOwner);
             BackupSelected();     // nová "uložená" záloha
             RefreshFiltered();
@@ -202,6 +219,37 @@ namespace VeterinarniOrdinace.ViewModels
                 || SelectedOwner.Phone != _backup.Phone
                 || SelectedOwner.Email != _backup.Email
                 || SelectedOwner.Address != _backup.Address;
+        }
+
+        private bool ValidateSelectedOwner()
+        {
+            EmailError = null;
+            ErrorMessage = null;
+
+            if (SelectedOwner == null) return false;
+
+            var email = (SelectedOwner.Email ?? "").Trim();
+            if (email.Length > 0)
+            {
+                var ok = System.Text.RegularExpressions.Regex.IsMatch(
+                    email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$");
+
+                if (!ok)
+                {
+                    EmailError = "Neplatný formát e-mailu.";
+                    ErrorMessage = EmailError;
+                    return false;
+                }
+            }
+
+            var digits = new string((SelectedOwner.Phone ?? "").Where(char.IsDigit).ToArray());
+            if (digits.Length > 0 && digits.Length < 9)
+            {
+                ErrorMessage = "Telefon musí mít alespoň 9 číslic.";
+                return false;
+            }
+
+            return true;
         }
     }
 }
